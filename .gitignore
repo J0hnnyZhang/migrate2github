@@ -1,0 +1,6 @@
+venv
+*.json
+.DS_Store
+.idea/
+*.pyc
+migration/conf/conf-my.yaml
