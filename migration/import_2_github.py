@@ -22,7 +22,7 @@ def create_repo(repo):
 
 
 def import_repo(repo, url):
-    cmd = f"gh api repos/WisdomGardenInc/{repo}/import -X PUT -f vcs=git -f vcs_url=\"{url}\" -f vcs_username='{bit_bucket.user}' -f vcs_password=\"{bit_bucket.password}\""
+    cmd = f"gh api repos/{github.org}/{repo}/import -X PUT -f vcs=git -f vcs_url=\"{url}\" -f vcs_username='{bit_bucket.user}' -f vcs_password=\"{bit_bucket.password}\""
 
     try:
         r = os.system(cmd)
